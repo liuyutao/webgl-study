@@ -9,6 +9,7 @@
 </head>
 <body>
 
+
 <div id="Stats-output">
 </div>
 <!-- Div which will hold the Output -->
@@ -24,6 +25,7 @@
         // create a scene, that will hold all our elements such as objects, cameras and lights.
         var scene = new THREE.Scene();
 
+        scene.overrideMaterial = new THREE.MeshLambertMaterial({color:0xffffff,});
         // create a camera, which defines where we're looking at.
         var camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 1000);
         scene.add(camera);
