@@ -1,0 +1,20 @@
+{
+  "name": "d3",
+  "version": "0.0.0",
+  "description": "",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass -w scss -o css",
+    "serve": "browser-sync start --server --files \"study-1/**/*.html\"",
+    "dev": "parallelshell \"npm run serve\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.17.3",
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "parallelshell": "^2.0.0"
+  }
+}
